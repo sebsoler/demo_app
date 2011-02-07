@@ -3,11 +3,6 @@ class MircopostsController < ApplicationController
   # GET /mircoposts.xml
   def index
     @mircoposts = Mircopost.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @mircoposts }
-    end
   end
 
   # GET /mircoposts/1
